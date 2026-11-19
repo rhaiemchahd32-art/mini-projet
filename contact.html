@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Cap Bon Explorer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="text-center p-4">
+    <h1>Cap Bon Explorer</h1>
+    <p>Découvrez le Cap Bon autrement !</p>
+</header>
+    <div>
+        <a class="navbar-brand" href="index.html">Cap Bon Explorer</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activites.html">Activités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agenda.html">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Réservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+
+    <h2>Contactez-nous</h2>
+
+    <p>
+        Vous souhaitez découvrir le Cap Bon ?
+        Contactez-nous pour obtenir plus d'informations
+        sur nos activités touristiques.
+    </p>
+
+    <section class="card p-4 mb-4">
+        <h3>Nos coordonnées</h3>
+        <p><strong>Adresse :</strong> Nabeul, Tunisie</p>
+        <p><strong>Téléphone :</strong> +216 72 000 000</p>
+        <p><strong>Email :</strong> contact@capbonexplorer.tn</p>
+
+        <h4>Nos horaires</h4>
+        <p>Du lundi au vendredi : 09h00 - 17h00</p>
+        <p>Samedi : 09h00 - 13h00</p>
+        <p>Dimanche : fermé</p>
+    </section>
+
+    <section class="mb-4">
+        <h3>Questions fréquentes</h3>
+
+        <div class="accordion" id="faq">
+
+            <div class="accordion-item">
+                <h4 class="accordion-header">
+                    <button class="accordion-button" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#q1">
+                        Comment découvrir nos activités ?
+                    </button>
+                </h4>
+                <div id="q1" class="accordion-collapse collapse show"
+                     data-bs-parent="#faq">
+                    <div class="accordion-body">
+                        Consultez la page Activités pour découvrir
+                        les activités proposées et leurs prix.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#q2">
+                        Où consulter les événements ?
+                    </button>
+                </h4>
+                <div id="q2" class="accordion-collapse collapse"
+                     data-bs-parent="#faq">
+                    <div class="accordion-body">
+                        Consultez la page Agenda pour voir les dates
+                        et les horaires des événements.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#q3">
+                        Comment simuler une réservation ?
+                    </button>
+                </h4>
+                <div id="q3" class="accordion-collapse collapse"
+                     data-bs-parent="#faq">
+                    <div class="accordion-body">
+                        Ouvrez la page Réservation et remplissez
+                        le formulaire proposé.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#q4">
+                        La réservation est-elle réelle ?
+                    </button>
+                </h4>
+                <div id="q4" class="accordion-collapse collapse"
+                     data-bs-parent="#faq">
+                    <div class="accordion-body">
+                        Non, le site est un projet pédagogique.
+                        Aucune réservation réelle n'est effectuée.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="card p-4">
+        <h3>Envoyez-nous un message</h3>
+
+        <form id="formContact">
+
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom complet</label>
+                <input type="text" id="nom" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-control"
+                          rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                Envoyer
+            </button>
+
+            <button type="reset" class="btn btn-secondary">
+                Effacer
+            </button>
+
+            <p id="confirmation" class="mt-3"></p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer class="text-center p-3 bg-dark text-white mt-5">
+    <p>© 2026 Cap Bon Explorer</p>
+    <a href="index.html" class="text-white">Retour à l'accueil</a>
+</footer>
+
+<script>
+document.getElementById("formContact").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("confirmation").textContent =
+        "Message simulé avec succès. Aucun message réel n'a été envoyé.";
+});
+</script>
+
+
+</body>
+</html>
