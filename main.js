@@ -139,3 +139,10 @@ function reinitialiser() {
 
 accueil();
 afficherActivites(activites);
+
+document.getElementById("formContact").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("confirmation").textContent =
+        "Message simulé avec succès. Aucun message réel n'a été envoyé.";
+});
