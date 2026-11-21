@@ -1,4 +1,5 @@
-```html
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -63,9 +64,6 @@
     <h2 class="mt-5">Notre catalogue d'activités</h2>
 
     <div class="row g-3 my-3">
-        <div class="col-md-8">
-            <input type="text" id="recherche" class="form-control" placeholder="Rechercher par nom ou lieu..." aria-label="Rechercher une activité">
-        </div>
         <div class="col-md-4">
             <select id="categorie" class="form-select" aria-label="Filtrer par catégorie">
                 <option value="Toutes">Toutes les catégories</option>
@@ -83,8 +81,7 @@
 
         <div class="col-md-6 col-lg-4 activite" data-nom="Découverte de la médina" data-lieu="Nabeul" data-categorie="Culture" data-prix="20" data-duree="2 heures" data-description="Découvrez les ruelles, les traditions et le patrimoine de la médina.">
             <div class="card h-100">
-                <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Découverte culturelle de la médina">
-                <div class="card-body">
+               <img src="images/medina.jpg" alt="medina de nabeul">
                     <h3 class="card-title h5">Découverte de la médina</h3>
                     <p>Catégorie : Culture</p>
                     <p>Lieu : Nabeul</p>
@@ -98,9 +95,7 @@
 
         <div class="col-md-6 col-lg-4 activite" data-nom="Atelier d'initiation à la poterie" data-lieu="Nabeul" data-categorie="Artisanat" data-prix="35" data-duree="2 heures" data-description="Initiez-vous à la poterie et découvrez un savoir-faire artisanal local.">
             <div class="card h-100">
-                <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Atelier d'initiation à la poterie">
-                <div class="card-body">
-                    <h3 class="card-title h5">Atelier d'initiation à la poterie</h3>
+               <img src="images/poterie.jpg" alt="poterie">
                     <p>Catégorie : Artisanat</p>
                     <p>Lieu : Nabeul</p>
                     <p>Durée : 2 heures</p>
@@ -112,8 +107,8 @@
         </div>
 
         <div class="col-md-6 col-lg-4 activite" data-nom="Parcours découverte de Kerkouane" data-lieu="Kerkouane" data-categorie="Culture" data-prix="30" data-duree="3 heures" data-description="Visitez le site historique de Kerkouane et découvrez son patrimoine.">
+            <img src="images/kerkourane.jpg" alt="kerkourane">
             <div class="card h-100">
-                <img src="https://images.unsplash.com/photo-1562835155-0c4fc2c0b5c6?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Site historique et archéologique">
                 <div class="card-body">
                     <h3 class="card-title h5">Parcours découverte de Kerkouane</h3>
                     <p>Catégorie : Culture</p>
@@ -128,11 +123,17 @@
 
         <div class="col-md-6 col-lg-4 activite" data-nom="Randonnée découverte" data-lieu="Cap Bon" data-categorie="Nature" data-prix="25" data-duree="2 heures" data-description="Partez en randonnée et profitez des paysages naturels du Cap Bon.">
             <div class="card h-100">
-                <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Paysage naturel pour une randonnée">
-                <div class="card-body">
+               <img src="images/randonnee.jpg" alt="randonnee">
                     <h3 class="card-title h5">Randonnée découverte</h3>
                     <p>Catégorie : Nature</p>
                     <p>Lieu : Cap Bon</p>
                     <p>Durée : 2 heures</p>
                     <p>Prix : 25 TND</p>
-                    <button class="btn btn-success details" data-bs-toggle="modal" data-bs
+                     <button class="btn btn-success details" data-bs-toggle="modal" data-bs-target="#detailsModal">Voir les détails</button>
+                    <a href="reservation.html" class="btn btn-outline-success mt-2">Réserver</a></div></div>
+    
+</main>
+<script src="js/main.js"></script>
+
+</body>
+</html>
